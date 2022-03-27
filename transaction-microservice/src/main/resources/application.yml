@@ -1,12 +1,12 @@
 server:
-  port: ${APP_PORT}
+  port: 8073
 
 spring:
   application:
     name: "transaction"
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-only
     show-sql: false
   datasource:
     username: ${DB_USERNAME}
